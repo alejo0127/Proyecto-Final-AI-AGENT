@@ -71,6 +71,44 @@ Ahora, ya debemos tener descargado e instalado ngrok y para ello lo podemos comp
 
 
 
+Ahora podemos empezar nuestro ultimo paso, que sera crear un archivo con el siguiente nombre : 
+
+![image](https://github.com/user-attachments/assets/bc7cb59f-471e-473c-aba4-a29e2e094baa)
+
+
+Junto con los dos que ya habiamos creado anteriormente que fueron Dockerfile y docker-compose.yml, ahora asi bien como estos dos, start.sh tambien tendra su propio script que sera de vital imporantcia, porque luego de este paso ya tendriamos nuestro tunel HTTPS hecho por medio de ngrok, ahora el script es : 
+
+
+![image](https://github.com/user-attachments/assets/67b585b7-10c8-474a-b293-c1f6be233009)
+
+
+
+Le damos permisos : 
+
+
+![image](https://github.com/user-attachments/assets/c822c4fe-3e2b-4ffc-9e31-598e3221104d)
+
+
+
+
+y finalmente con este comando construimos lo que sera el tunel HTTPS : 
+
+
+![image](https://github.com/user-attachments/assets/3158bb41-ed22-4bbd-8956-7a4fa423d89a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
