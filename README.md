@@ -97,6 +97,16 @@ y finalmente con este comando construimos lo que sera el tunel HTTPS :
 ![image](https://github.com/user-attachments/assets/3158bb41-ed22-4bbd-8956-7a4fa423d89a)
 
 
+Ahora, ya como ultimo tendremos la siguiente direccion que nos llevara a una ventana en internet que nos permitira ya hacer todo lo que comente al principio, poder con tranquilidad enlazar n8n con telegram por medio de la api, y ya estaria, la direccion para dar un ejemplo seria como lo siguiente : 
+
+
+![image](https://github.com/user-attachments/assets/ae587055-e3d1-469b-a48b-a190f13b92e0)
+
+
+
+
+
+
 
 
 
