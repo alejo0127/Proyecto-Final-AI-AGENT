@@ -116,6 +116,17 @@ PASO A PASO :
 
 PASO # 1 : 
 
+Descargar telegram si aun no esta instalado, de nuestro de nuestro dispositivo movil u ordenador.
+
+
+![image](https://github.com/user-attachments/assets/0d46d605-fa2d-4807-be01-37c72db413bd)
+
+
+Ahora luego de hacer la configuracion necesario con el numero de telefeno, etc, buscaremos en la pestaña buscar el nombre del bot que aparece acontinuacion : 
+
+![image](https://github.com/user-attachments/assets/b378d33e-eb43-4df2-b201-632cbedb4fb1)
+
+
 
 
 
