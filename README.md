@@ -18,6 +18,8 @@ Empezaremos por la descarga del docker y docker compose, que son los contenderos
 ![image](https://github.com/user-attachments/assets/b4a37a66-c68c-440e-9b53-9a6bf2446856)
 
 
+A
+
 
 Al final de todo ya tendremos el hello world que nos verifica la correcta descarga del docker en nuestra maquina.
 
@@ -101,6 +103,20 @@ Ahora, ya como ultimo tendremos la siguiente direccion que nos llevara a una ven
 
 
 ![image](https://github.com/user-attachments/assets/ae587055-e3d1-469b-a48b-a190f13b92e0)
+
+
+
+AHORA, como conclusion general este es un paso a paso un poco rapido pero con el fin de explicar el como descargar y hacer que n8n corra desde cualquier punto del mundo con HTTPS por medio de un tunel en ngrok, para conectar appi keys de telegram,discord, etc. 
+
+La explicacion del paso a paso de la creacion del flujo de trabajo se realizara en la sustentacion del trabajo.
+
+Para ir finalizando dare una breve explicacion del como entrar al bot luego de entender como se creo, para probar su funcionamiento en tiempo real : 
+
+PASO A PASO : 
+
+PASO # 1 : 
+
+
 
 
 
