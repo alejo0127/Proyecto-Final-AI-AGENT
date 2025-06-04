@@ -126,6 +126,13 @@ Ahora luego de hacer la configuracion necesario con el numero de telefeno, etc, 
 
 ![image](https://github.com/user-attachments/assets/b378d33e-eb43-4df2-b201-632cbedb4fb1)
 
+Como ultimo se nos abrira la pestaña luego de darle click y podremos preguntarle lo que sea, y si el bot no es capaz de responder debido a sus limitaciones tambien sera capaz de decirnos el por que no puede y eso seria todo, funciona como un chatbot, conectado a un IA que esta abiero a responder todas nuestras preguntas. 
+
+
+
+creditos a : enguillem en youtube y a su pagina web, de gran ayuda para la realizacion de este proyecto.
+
+
 
 
 
