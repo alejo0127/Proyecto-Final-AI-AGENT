@@ -15,17 +15,7 @@ Entonces suponiendo que tenemos descargado git bush, que es el icono que les mue
 Empezaremos por la descarga del docker y docker compose, que son los contenderos que les comente antes por medio de los siguientes comandos en bash : 
 
 
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io
-sudo usermod -aG docker $USER
-su - $USER
-docker run hello-world
+![image](https://github.com/user-attachments/assets/b4a37a66-c68c-440e-9b53-9a6bf2446856)
 
 
 
@@ -33,53 +23,25 @@ Al final de todo ya tendremos el hello world que nos verifica la correcta descar
 
 Ahora ya con el dockerfile descargado, y la imagen para debian, nos tendremos que mover a Visual Studio Code porque sera nuestra herramienta fundamental desde este paso hasta el final para poder tener nuestro tunel alojado en nuestro pc, entonces luego de que tengamos abierto Visual Studio Code vamos a trbajar desde su terminal, vamos a abrir una terminal y vamos a crear un entorno ideal para n8n por medio de los siguientes dos comandos : 
 
-mkdir -p ~/Docker/n8n-debian
-cd ~/Docker/n8n-debian
-
+![image](https://github.com/user-attachments/assets/55d87455-2c8f-47b1-ac00-8273f5f03ce2)
 
 
 Listo, teniendo el entorno de n8n en VS, ahora vamos a crear dos archivos cuyos nombres seran Dockerfile que tendra el siguiente script : 
 
-FROM debian:12
 
-RUN apt-get update && apt-get install -y \
-    curl \
-    gnupg \
-    git \
-    build-essential \
-    python3 \
-    libreoffice \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs && \
-    npm install -g n8n
-
-ENV TZ=Europe/Madrid
-
-CMD ["n8n"]
-
+![image](https://github.com/user-attachments/assets/7d4fad02-ea0a-49cc-89ff-a929ab18626e)
 
 
 
 Y ahora otro archivo llamado docker-compose.yml, siendo ambos igual de imporantes, pero este segundo donde nos vamos a mover para continuar con el siguiente paso, el script de docker-compose.yml son los siguiente : 
 
-version: '3.7'
 
-services:
-  n8n:
-    build: .
-    ports:
-      - "5678:5678"
-    environment:
-      - GENERIC_TIMEZONE=Europe/Madrid
-      - N8N_BASIC_AUTH_ACTIVE=true
-      - N8N_BASIC_AUTH_USER=admin
-      - N8N_BASIC_AUTH_PASSWORD=admin123
-      - WEBHOOK_URL=${WEBHOOK_URL}
-    volumes:
-      - ./n8n-data:/home/node/.n8n
 
+![image](https://github.com/user-attachments/assets/7e4facee-d316-44cb-aa60-eaf250cd57da)
+
+
+
+    
 
 y finalizamos con el comando en el terminal : docker compose up --build (para asi ya inicar la descarga de todos los archivos de n8n, que tomaran su tiempo pero debe ser exitosa).
 
