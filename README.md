@@ -78,6 +78,17 @@ services:
       - ./n8n-data:/home/node/.n8n
 
 
+y finalizamos con el comando en el terminal : docker compose up --build (para asi ya inicar la descarga de todos los archivos de n8n, que tomaran su tiempo pero debe ser exitosa).
+
+
+
+Listo, luego de estos pasos, cumpliriamos con exito la descarga de n8n que es como el primer paso para llegar al exito de nuestro agente IA, que pasa el link que nos redireccionara ser a un local.host5678/, ahora bien no esta del todo mal, por tood lo contrario es funcional, y tenemos ya toda la interfaz de n8n a nuestra disposicion, pero si nostros queremos llegar a conectar telegram con n8n en local no nos permite, por que ?, porque telegram nos obliga a que el dominio publico sea HTTPS, entonces la solucion mas optima, profesional y segura que podemos encontrar es utilizar ngrok que es una herramienta que nos permitira abrir un tunel HTTPS hasta nuestro local host, que ahora si nos permitira, conectar no solo telegram con libertad sino las otros triggers de n8n que nos lo impidan.
+
+Ahora ya descargamos debian, docker y n8n, nuestro siguiente paso sera descargar e instalar ngrok en la maquina, y para esto utilizaremos el terminal de VS, asi como lo hicimos para poder descargar n8n, entonces utilizaremos los siguientes comandos : 
+
+
+
+
 
 
 
