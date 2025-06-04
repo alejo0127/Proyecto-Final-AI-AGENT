@@ -87,6 +87,23 @@ Listo, luego de estos pasos, cumpliriamos con exito la descarga de n8n que es co
 Ahora ya descargamos debian, docker y n8n, nuestro siguiente paso sera descargar e instalar ngrok en la maquina, y para esto utilizaremos el terminal de VS, asi como lo hicimos para poder descargar n8n, entonces utilizaremos los siguientes comandos : 
 
 
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+sudo mv ngrok /usr/local/bin/
+ngrok version
+
+
+
+
+
+
+Ahora, ya debemos tener descargado e instalado ngrok y para ello lo podemos comprobar poniendo ngrok version, nos debe dar como resultado ngrok version 3.22.1. Ahora ya luego de esto, tenemos que dirijirnos a la pagina de ngrok en google, crear un usuario, completas la autorizacion en dos pasos con microsoft, y luego de esto en la pagina nos arrojara lo siguiente : 
+
+![image](https://github.com/user-attachments/assets/ee21567e-7712-4319-b908-46a32e63d34c)
+
+
+
+
 
 
 
